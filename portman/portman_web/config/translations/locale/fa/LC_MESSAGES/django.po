@@ -1,0 +1,624 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Translators:
+# Ali Mahdiyar <alimahdiyar77@gmail.com>, 2020
+# Aryan Baghi <ar.baghi.ce@gmail.com>, 2020
+# Omid Zarin <zarinpy@gmail.com>, 2019
+# Xavier Ordoquy <xordoquy@linovia.com>, 2020
+msgid ""
+msgstr ""
+"Project-Id-Version: Django REST framework\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-02 09:45+0330\n"
+"PO-Revision-Date: 2020-10-13 19:59+0000\n"
+"Last-Translator: Xavier Ordoquy <xordoquy@linovia.com>\n"
+"Language-Team: Persian (Iran) (http://www.transifex.com/django-rest-"
+"framework-1/django-rest-framework/language/fa_IR/)\n"
+"Language: fa_IR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: cartable/models.py:157
+msgid "You are not allowed to vote for this poll."
+msgstr "شما مجاز به رای دادن در این نظرسنجی نیستید."
+
+#: cartable/models.py:216
+msgid "Due date must be in the future."
+msgstr "تاریخ مهلت انجام باید به زمانی در آینده اشاره کند."
+
+#: cartable/serializers.py:213 cartable/views.py:609
+msgid "Reminder time must be in the future."
+msgstr "تاریخ یادآوری باید به زمانی در آینده اشاره کند."
+
+#: cartable/views.py:140
+msgid "Ticket deleted"
+msgstr "تیکت حذف شد"
+
+#: cartable/views.py:168
+msgid "Marked as read"
+msgstr "به عنوان خوانده شده علامت گذاری شد"
+
+#: cartable/views.py:181
+msgid "Bookmarked"
+msgstr "به لیست نشان شده ها اضافه شد"
+
+#: cartable/views.py:194
+msgid "Pinned"
+msgstr "پین شد"
+
+#: cartable/views.py:205
+msgid "Marked as done"
+msgstr "به عنوان انجام شده نشانه گذاری شد"
+
+#: cartable/views.py:311
+msgid "One or more invalid choice_ids."
+msgstr "تعدادی از آیدی ها به اشتباه وارد شده اند."
+
+#: cartable/views.py:316
+msgid "You have already voted in this poll, so you can't revote."
+msgstr ""
+"شما قبلا در این نظر سنجی شرکت کرده اید بنابراین مجاز به شرکت مجدد نمی باشید."
+
+#: cartable/views.py:345 cartable/views.py:427 cartable/views.py:530
+#: cartable/views.py:543 cartable/views.py:622
+msgid "You do not have permission."
+msgstr "دسترسی به این بخش برای شما امکان پذیر نیست."
+
+#: cartable/views.py:352
+msgid "You do not have permission to vote in this poll."
+msgstr "متاسفانه شما اجازه شرکت در این نظرسنجی را ندارید."
+
+#: cartable/views.py:355
+msgid "No choices selected."
+msgstr "هیچ گزینه ای انتخاب نکرده اید."
+
+#: cartable/views.py:358
+msgid "You can vote just one choice."
+msgstr ""
+
+#: cartable/views.py:489
+#, fuzzy
+#| msgid "Marked as done"
+msgid "Marked as done."
+msgstr "به عنوان انجام شده نشانه گذاری شد"
+
+#: cartable/views.py:501
+msgid "Marked as in progress."
+msgstr "به عنوان در حال انجام نشانه گذاری شد."
+
+#: cartable/views.py:513
+msgid "Marked as to do."
+msgstr "به عنوان کارهای آتی نشانه گذاری شد."
+
+#: cartable/views.py:524
+msgid "Assigned to users."
+msgstr "به کاربران انتخاب شده اختصاص داده شد."
+
+#: cartable/views.py:540
+msgid ""
+"Because the task's status was changed to Done by its owner, you cannot "
+"change it."
+msgstr ""
+"متاسفانه شما امکان تغییر وضعیت این درخواست را ندارید این به دلیل آن است که "
+"مالکش، وضعیت آن را به 'انجام شده' تغییر داده است."
+
+#: config/settings.py:215
+msgid "Farsi"
+msgstr "فارسی"
+
+#: config/settings.py:216
+msgid "English"
+msgstr "انگلیسی"
+
+#: olt/models.py:780
+msgid "Cenceled"
+msgstr "لغو شده"
+
+#: olt/models.py:782
+msgid "Allocated"
+msgstr "اشغال شده"
+
+#: olt/models.py:784
+msgid "Corrupted"
+msgstr "خراب"
+
+#: olt/models.py:786
+msgid "Released"
+msgstr "آزاد"
+
+#: olt/models.py:788
+msgid "Ready To Config"
+msgstr "آماده کانفیگ"
+
+#: olt/models.py:790
+#, fuzzy
+#| msgid "Ready for installation."
+msgid "Ready To Install"
+msgstr "آماده به نصب"
+
+#: olt/models.py:791
+msgid "Reserved"
+msgstr "رزرو شده"
+
+#: olt/views.py:106
+msgid ""
+"Deletion failed. This olt has associated fats that must be addressed before "
+"you can proceed. Please delete these fats first."
+msgstr ""
+"حذف اولتی انجام نشد. این اولتی دارای اف ای تی است. برای حذف اولتی لطفا ابتدا "
+"اف ای تی های وابسته را حذف نمایید."
+
+# olt/views
+#: olt/views.py:633
+msgid ""
+"Deletion failed. It has associated olts that must be addressed before you "
+"can proceed. Please delete these olts first."
+msgstr ""
+"حذف انجام نشد زیرا دارای اولتی است. برای انجام عملیات حذف ابتدا اولتی های "
+"وابسته را حذف نمایید."
+
+#: olt/views.py:637 olt/views.py:747 olt/views.py:1698
+msgid ""
+"Deletion failed. It has associated cables that must be addressed before you "
+"can proceed. Please delete these cables first."
+msgstr ""
+"حذف انجام نشد زیرا دارای کابل است. برای انجام عملیات حذف ابتدا کابل های "
+"وابسته را حذف نمایید."
+
+#: olt/views.py:742
+msgid ""
+"Deletion failed. It has associated items like splitter, ffat, otb or tb. "
+"Please delete these items first."
+msgstr ""
+"حذف انجام نشد زیرا دارای آیتم هایی است. برای حذف  لطفا ابتدا آیتم های وابسته "
+"را حذف نمایید."
+
+#: olt/views.py:756 olt/views.py:769 olt/views.py:778
+#, python-brace-format
+msgid "Partak Error. {message}"
+msgstr " خطای پارتاک. {message}"
+
+#: olt/views.py:2836
+msgid "Splitter not found"
+msgstr "اسپلیتر یافت نشد"
+
+#: olt/views.py:2842
+msgid "Patch panel port not found."
+msgstr "پورت پچ پنل یافت نشد"
+
+#: olt/views.py:2845
+msgid "This Patch panel port is used by splitter, id="
+msgstr "پورت پچ پنل توسط اسپلیتر اشغال شده است. شناسه="
+
+#: olt/views.py:2850
+msgid "This port/leg number is reserved, id="
+msgstr "این پورت/شماره لگ قبلا رزرو شده است. شناسه="
+
+#: olt/views.py:2852
+msgid "This port/leg number is allocated, id="
+msgstr "این پورت/شماره لگ قبلا اشغال شده است. شناسه="
+
+#: olt/views.py:2854
+msgid "This port/leg number is ready to install, id="
+msgstr "این پورت/شماره لگ آماده نصب است. شناسه="
+
+#: olt/views.py:2855
+msgid "Port/Leg number is not available"
+msgstr "پورت/شماره لگ اسپلیتر در دسترس نیست"
+
+#: olt/views.py:2859
+msgid "A port is already reserved for this customer"
+msgstr "یک پورت قبلا برای این مشترک رزرو شده است"
+
+#: olt/views.py:2862
+msgid "English customer's name only accepts english characters"
+msgstr "اسم لاتین مشترک فقط حروف انگلیسی میتواند باشد"
+
+#: olt/views.py:2893
+#, fuzzy
+#| msgid "A valid number is required."
+msgid "Both splitter ID and leg number are required."
+msgstr "هر دو مقدار شناسه اسپلیتر و شماره لگ الزامی هستند"
+
+#: olt/views.py:2923
+msgid "Unable to change reserved port"
+msgstr "امکان تغییر در رزرو پورت وجود ندارد"
+
+#: olt/views.py:2925
+#, fuzzy
+#| msgid "User type updated successfully."
+msgid "Reservation canceled successfully"
+msgstr "نوع/گروه کاربر با موفقیت به روز شد"
+
+#: olt/views.py:2933
+msgid "Reservation status is not acceptable."
+msgstr "وضعیت رزرو برای انجام درخواست مناسب نیست"
+
+#: olt/views.py:2958
+#, fuzzy
+#| msgid "User type updated successfully."
+msgid "Data Saved Successfully"
+msgstr "نوع/گروه کاربر با موفقیت به روز شد"
+
+#: olt/views.py:2961
+msgid "Could not update installation info"
+msgstr "عدم موفقیت در به روزرسانی اطلاعات نصب"
+
+#: olt/views.py:2978
+msgid ""
+"Unable to ready to install. The port has been already reserved or allocated."
+msgstr ""
+"وضعیت را نمیتوان به آماده نصب تغییر داد. این پورت قبلا رزرو یا اشغال شده است."
+
+#: olt/views.py:2981
+msgid "Ready for installation."
+msgstr "آماده به نصب"
+
+#: users/views.py:200 users/views.py:233
+msgid "User inactive or deleted."
+msgstr "کاربر غیر فعال یا حذف شده است."
+
+#: users/views.py:211
+msgid "You are not belongs to any LDAP group!"
+msgstr "گروه شما در الدپ به درستی تعیین نشده است"
+
+#: users/views.py:235
+msgid "Invalid username/password."
+msgstr "نام کاربری/رمز‌عبور نامعتبر است."
+
+#: users/views.py:239
+#, python-brace-format
+msgid "Error is {0}"
+msgstr "خطا برابر است با : {0}"
+
+#: users/views.py:324
+msgid "User type updated successfully."
+msgstr "نوع/گروه کاربر با موفقیت به روز شد"
+
+#: users/views.py:326
+msgid "No types provided."
+msgstr "هیچ نوعی ارسال نشده است"
+
+#: users/views.py:333
+msgid "No users permission profile provided."
+msgstr "هیچ پروفایلی برای کاربر ارسال نشده است"
+
+#: users/views.py:347
+msgid "Permissions assignment successfully."
+msgstr "دسترسی ها با موفقیت اعمال شد"
+
+#: knowledge_graph/views.py
+msgid "The deletion was unsuccessful because the selected item has sub-items. Please first remove the sub-items."
+msgstr "حذف ناموفق بود زیرا آیتم انتخاب شده زیر آیتم هایی دارد. لطفا ابتدا زیر آیتم ها را حذف کنید."
+
+
+#~ msgid "Unable to log in with provided credentials."
+#~ msgstr "با اطلاعات ارسال شده نمیتوان وارد شد."
+
+#~ msgid "Invalid basic header. No credentials provided."
+#~ msgstr "هدر اولیه نامعتبر است. اطلاعات هویتی ارائه نشده است."
+
+#~ msgid "Invalid basic header. Credentials string should not contain spaces."
+#~ msgstr "هدر اولیه نامعتبر است. رشته ی اطلاعات هویتی نباید شامل فاصله باشد."
+
+#~ msgid "Invalid basic header. Credentials not correctly base64 encoded."
+#~ msgstr ""
+#~ "هدر اولیه نامعتبر است. اطلاعات هویتی با متد base64 به درستی رمزنگاری نشده "
+#~ "است."
+
+#~ msgid "Invalid token header. No credentials provided."
+#~ msgstr "توکن هدر نامعتبر است. اطلاعات هویتی ارائه نشده است. "
+
+#~ msgid "Invalid token header. Token string should not contain spaces."
+#~ msgstr "توکن هدر نامعتبر است. توکن نباید شامل فضای خالی باشد."
+
+#~ msgid ""
+#~ "Invalid token header. Token string should not contain invalid characters."
+#~ msgstr "توکن هدر نامعتبر است. توکن شامل کاراکتر‌های نامعتبر است."
+
+#~ msgid "Invalid token."
+#~ msgstr "توکن هدر نامعتبر است. "
+
+#~ msgid "Auth Token"
+#~ msgstr "توکن اعتبار‌سنجی"
+
+#~ msgid "Key"
+#~ msgstr "کلید"
+
+#~ msgid "User"
+#~ msgstr "کاربر"
+
+#~ msgid "Created"
+#~ msgstr "ایجاد‌شد"
+
+#~ msgid "Token"
+#~ msgstr "توکن"
+
+#~ msgid "Tokens"
+#~ msgstr "توکن‌ها"
+
+#~ msgid "Username"
+#~ msgstr "نام‌کاربری"
+
+#~ msgid "Password"
+#~ msgstr "رمز‌عبور"
+
+#~ msgid "Must include \"username\" and \"password\"."
+#~ msgstr "باید شامل نام‌کاربری و رمز‌عبور باشد."
+
+#~ msgid "A server error occurred."
+#~ msgstr "خطای سمت سرور رخ داده است."
+
+#~ msgid "Malformed request."
+#~ msgstr "درخواست ناقص."
+
+#~ msgid "Incorrect authentication credentials."
+#~ msgstr "اطلاعات احراز هویت صحیح نیست."
+
+#~ msgid "Authentication credentials were not provided."
+#~ msgstr "اطلاعات برای اعتبارسنجی ارسال نشده است."
+
+#~ msgid "You do not have permission to perform this action."
+#~ msgstr "شما اجازه انجام این دستور را ندارید."
+
+#~ msgid "Not found."
+#~ msgstr "یافت نشد."
+
+#, python-brace-format
+#~ msgid "Method \"{method}\" not allowed."
+#~ msgstr "متد {method} مجاز نیست."
+
+#~ msgid "Could not satisfy the request Accept header."
+#~ msgstr "نوع محتوای درخواستی در هدر قابل قبول نیست."
+
+#, python-brace-format
+#~ msgid "Unsupported media type \"{media_type}\" in request."
+#~ msgstr "نوع رسانه {media_type} در درخواست پشتیبانی نمیشود."
+
+#~ msgid "Request was throttled."
+#~ msgstr "تعداد درخواست‌های شما محدود شده است."
+
+#~ msgid "This field is required."
+#~ msgstr "این مقدار لازم است."
+
+#~ msgid "This field may not be null."
+#~ msgstr "این مقدار نباید نال باشد."
+
+#~ msgid "This field may not be blank."
+#~ msgstr "این مقدار نباید خالی باشد."
+
+#, python-brace-format
+#~ msgid "Ensure this field has no more than {max_length} characters."
+#~ msgstr "مطمئن شوید طول این مقدار بیشتر از {max_length} نیست."
+
+#, python-brace-format
+#~ msgid "Ensure this field has at least {min_length} characters."
+#~ msgstr "مطمئن شوید طول این مقدار حداقل {min_length} است."
+
+#~ msgid "Enter a valid email address."
+#~ msgstr "پست الکترونیکی صحبح وارد کنید."
+
+#~ msgid "This value does not match the required pattern."
+#~ msgstr "مقدار وارد شده با الگو مطابقت ندارد."
+
+#~ msgid ""
+#~ "Enter a valid \"slug\" consisting of letters, numbers, underscores or "
+#~ "hyphens."
+#~ msgstr "یک \"slug\" معتبر شامل حروف، اعداد، آندرلاین یا خط فاصله وارد کنید"
+
+#~ msgid "Enter a valid URL."
+#~ msgstr "یک URL معتبر وارد کنید"
+
+#~ msgid "Enter a valid IPv4 or IPv6 address."
+#~ msgstr "یک آدرس IPv4 یا IPv6 معتبر وارد کنید."
+
+#~ msgid "A valid integer is required."
+#~ msgstr "یک مقدار عددی معتبر لازم است."
+
+#, python-brace-format
+#~ msgid "Ensure this value is less than or equal to {max_value}."
+#~ msgstr "این مقدار باید کوچکتر یا مساوی با {max_value} باشد."
+
+#, python-brace-format
+#~ msgid "Ensure this value is greater than or equal to {min_value}."
+#~ msgstr "این مقدار باید بزرگتر یا مساوی با {min_value} باشد."
+
+#~ msgid "String value too large."
+#~ msgstr "رشته بسیار طولانی است."
+
+#, python-brace-format
+#~ msgid "Ensure that there are no more than {max_digits} digits in total."
+#~ msgstr "بیشتر از {max_digits} رقم نباید وجود داشته باشد."
+
+#, python-brace-format
+#~ msgid ""
+#~ "Ensure that there are no more than {max_decimal_places} decimal places."
+#~ msgstr "بیشتر از {max_decimal_places} ممیز اعشار نباید وجود داشته باشد"
+
+#, python-brace-format
+#~ msgid ""
+#~ "Ensure that there are no more than {max_whole_digits} digits before the "
+#~ "decimal point."
+#~ msgstr "بیشتر از {max_whole_digits} رقم نباید قبل از ممیز اعشار باشد."
+
+#, python-brace-format
+#~ msgid ""
+#~ "Datetime has wrong format. Use one of these formats instead: {format}."
+#~ msgstr ""
+#~ "فرمت Datetime اشتباه است. از یکی از این فرمت ها استفاده کنید: {format}."
+
+#~ msgid "Expected a datetime but got a date."
+#~ msgstr "باید datetime باشد اما date دریافت شد."
+
+#, python-brace-format
+#~ msgid "Date has wrong format. Use one of these formats instead: {format}."
+#~ msgstr ""
+#~ "فرمت تاریخ اشتباه است. از یکی از این فرمت ها استفاده کنید: {format}."
+
+#~ msgid "Expected a date but got a datetime."
+#~ msgstr "باید date باشد اما datetime دریافت شد."
+
+#, python-brace-format
+#~ msgid "Time has wrong format. Use one of these formats instead: {format}."
+#~ msgstr "فرمت Time اشتباه است. از یکی از این فرمت ها استفاده کنید: {format}."
+
+#, python-brace-format
+#~ msgid ""
+#~ "Duration has wrong format. Use one of these formats instead: {format}."
+#~ msgstr ""
+#~ "فرمت Duration اشتباه است. از یکی از این فرمت ها استفاده کنید: {format}."
+
+#, python-brace-format
+#~ msgid "\"{input}\" is not a valid choice."
+#~ msgstr "\"{input}\" یک انتخاب معتبر نیست."
+
+#, python-brace-format
+#~ msgid "More than {count} items..."
+#~ msgstr "بیشتر از {count} آیتم..."
+
+#, python-brace-format
+#~ msgid "Expected a list of items but got type \"{input_type}\"."
+#~ msgstr "باید یک لیست از مقادیر ارسال شود اما یک «{input_type}» دریافت شد."
+
+#~ msgid "This selection may not be empty."
+#~ msgstr "این بخش نمی‌تواند خالی باشد."
+
+#, python-brace-format
+#~ msgid "\"{input}\" is not a valid path choice."
+#~ msgstr "\"{input}\" یک مسیر انتخاب معتبر نیست."
+
+#~ msgid "No file was submitted."
+#~ msgstr "فایلی ارسال نشده است."
+
+#~ msgid ""
+#~ "The submitted data was not a file. Check the encoding type on the form."
+#~ msgstr "دیتای ارسال شده فایل نیست. encoding type فرم را چک کنید."
+
+#~ msgid "No filename could be determined."
+#~ msgstr "اسم فایل مشخص نیست."
+
+#~ msgid "The submitted file is empty."
+#~ msgstr "فایل ارسال شده خالی است."
+
+#, python-brace-format
+#~ msgid ""
+#~ "Ensure this filename has at most {max_length} characters (it has "
+#~ "{length})."
+#~ msgstr ""
+#~ "نام این فایل باید حداکثر {max_length} کاراکتر باشد ({length} کاراکتر "
+#~ "دارد)."
+
+#~ msgid ""
+#~ "Upload a valid image. The file you uploaded was either not an image or a "
+#~ "corrupted image."
+#~ msgstr ""
+#~ "یک عکس معتبر آپلود کنید. فایلی که ارسال کردید عکس یا عکس خراب شده نیست"
+
+#~ msgid "This list may not be empty."
+#~ msgstr "این لیست نمی تواند خالی باشد"
+
+#, python-brace-format
+#~ msgid "Expected a dictionary of items but got type \"{input_type}\"."
+#~ msgstr ""
+#~ "باید دیکشنری از آیتم ها ارسال می شد، اما \"{input_type}\" ارسال شده است."
+
+#~ msgid "Value must be valid JSON."
+#~ msgstr "مقدار باید JSON معتبر باشد."
+
+#~ msgid "Search"
+#~ msgstr "جستجو"
+
+#~ msgid "Ordering"
+#~ msgstr "ترتیب"
+
+#~ msgid "ascending"
+#~ msgstr "صعودی"
+
+#~ msgid "descending"
+#~ msgstr "نزولی"
+
+#~ msgid "Invalid page."
+#~ msgstr "صفحه نامعتبر"
+
+#~ msgid "Invalid cursor"
+#~ msgstr "مکان نمای نامعتبر"
+
+#, python-brace-format
+#~ msgid "Invalid pk \"{pk_value}\" - object does not exist."
+#~ msgstr "pk نامعتبر \"{pk_value}\" - این Object وجود ندارد"
+
+#, python-brace-format
+#~ msgid "Incorrect type. Expected pk value, received {data_type}."
+#~ msgstr "تایپ نامعتبر. باید pk ارسال می شد اما {data_type} ارسال شده است."
+
+#~ msgid "Invalid hyperlink - No URL match."
+#~ msgstr "هایپرلینک نامعتبر - URL مطابق وجود ندارد"
+
+#~ msgid "Invalid hyperlink - Incorrect URL match."
+#~ msgstr "هایپرلینک نامعتبر - خطا در تطابق URL"
+
+#~ msgid "Invalid hyperlink - Object does not exist."
+#~ msgstr "هایپرلینک نامعبتر - Object وجود ندارد."
+
+#, python-brace-format
+#~ msgid "Incorrect type. Expected URL string, received {data_type}."
+#~ msgstr "داده نامعتبر. باید رشته ی URL باشد، اما {data_type} دریافت شد."
+
+#, python-brace-format
+#~ msgid "Object with {slug_name}={value} does not exist."
+#~ msgstr "Object با {slug_name}={value} وجود ندارد."
+
+#~ msgid "Invalid value."
+#~ msgstr "مقدار نامعتبر."
+
+#, python-brace-format
+#~ msgid "Invalid data. Expected a dictionary, but got {datatype}."
+#~ msgstr ""
+#~ "داده نامعتبر. باید دیکشنری ارسال می شد، اما {datatype} ارسال شده است."
+
+#~ msgid "Filters"
+#~ msgstr "فیلترها"
+
+#~ msgid "None"
+#~ msgstr "None"
+
+#~ msgid "No items to select."
+#~ msgstr "آیتمی برای انتخاب وجود ندارد"
+
+#~ msgid "This field must be unique."
+#~ msgstr "این فیلد باید یکتا باشد"
+
+#, python-brace-format
+#~ msgid "The fields {field_names} must make a unique set."
+#~ msgstr "فیلدهای {field_names} باید یک مجموعه یکتا باشند."
+
+#, python-brace-format
+#~ msgid "This field must be unique for the \"{date_field}\" date."
+#~ msgstr "این فیلد باید برای تاریخ \"{date_field}\" یکتا باشد."
+
+#, python-brace-format
+#~ msgid "This field must be unique for the \"{date_field}\" month."
+#~ msgstr "این فیلد باید برای ماه \"{date_field}\" یکتا باشد."
+
+#, python-brace-format
+#~ msgid "This field must be unique for the \"{date_field}\" year."
+#~ msgstr "این فیلد باید برای سال \"{date_field}\" یکتا باشد."
+
+#~ msgid "Invalid version in \"Accept\" header."
+#~ msgstr "ورژن نامعتبر در هدر \"Accept\"."
+
+#~ msgid "Invalid version in URL path."
+#~ msgstr "ورژن نامعتبر در مسیر URL."
+
+#~ msgid "Invalid version in URL path. Does not match any version namespace."
+#~ msgstr "ورژن نامعتبر در مسیر URL. با هیچ نام گذاری ورژنی تطابق ندارد."
+
+#~ msgid "Invalid version in hostname."
+#~ msgstr "نسخه نامعتبر در نام هاست"
+
+#~ msgid "Invalid version in query parameter."
+#~ msgstr "ورژن نامعتبر در پارامتر کوئری."

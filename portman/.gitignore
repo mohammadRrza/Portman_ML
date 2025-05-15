@@ -1,0 +1,17 @@
+*.pyc
+*/example.log
+*/portmanLog.log.*
+*/nohup.out
+**/__pycache__/**
+/portmanLog.log
+/portmanLog.log.?
+portman_web/portmanLog.log.?
+portman_web/portmanLog.log
+portman_core2/portmanLog.log
+**/static/**
+portman_web/static/**
+/portman_web/media/**
+bulk_commands/files/**
+portman_ML/data/
+portman_ML/models/
+portman10-env/
