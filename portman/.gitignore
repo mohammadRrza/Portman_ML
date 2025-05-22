@@ -14,4 +14,4 @@ portman_web/static/**
 bulk_commands/files/**
 portman_ML/data/
 portman_ML/models/
-portman-env/
+portman-env/**
