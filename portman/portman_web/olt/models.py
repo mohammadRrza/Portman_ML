@@ -88,11 +88,6 @@ class OLTCabinet(AbstractProperty):
     updated_at = models.DateTimeField(auto_now=True)
     install_manager = models.ForeignKey(main_user, on_delete=models.DO_NOTHING, related_name='install_manager', null=True, blank=True)
 
-    class Meta:
-        index_together = (
-            ('parent', 'is_odc'),
-            ('city', 'parent', 'is_odc')
-        )
 
     def __str__(self):
         return self.name
@@ -401,11 +396,7 @@ class FAT(AbstractProperty):
     building = models.ForeignKey(Building, on_delete=models.DO_NOTHING, null=True, blank=True)
     install_manager = models.ForeignKey(main_user, on_delete=models.DO_NOTHING, related_name='fat_install_manager', null=True, blank=True)
 
-    class Meta:
-        index_together = (
-            ('parent', 'is_otb'),
-            ('olt', 'parent', 'is_otb')
-        )
+
 
     def __str__(self):
         return self.code
