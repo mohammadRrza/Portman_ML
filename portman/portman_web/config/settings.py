@@ -80,7 +80,7 @@ INSTALLED_APPS = (
     'sky_node',
     'ngn',
     # 'sslserver',
-
+    'django_celery_beat'
 )
 
 MIDDLEWARE = (

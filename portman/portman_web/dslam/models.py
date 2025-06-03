@@ -316,6 +316,12 @@ class MDFDSLAM(models.Model):
         return '{0}:{1}:{2}:{3}'.format(self.telecom_center_id, self.dslam_id, self.slot_number, self.port_number)
 
 
+class LineProfilePrediction(models.Model):
+    port_id = models.CharField(max_length=255)
+    predicted_profile = models.CharField(max_length=255)
+    timestamp = models.DateTimeField(auto_now_add=True)
+    
+
 class DSLAMFaultyConfig(models.Model):
     dslam_id = models.IntegerField()
     slot_number_from = models.IntegerField()
