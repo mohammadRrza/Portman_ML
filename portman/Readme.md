@@ -83,6 +83,107 @@ These records include key operational metrics such as SNR levels, attenuation, a
 
 ---
 
+# 📊 Portman ML
+
+Machine learning module for the Portman system to train, tune, and evaluate models (e.g., XGBoost) for telecom line profiling and risk prediction.
+
+## 🔧 Features
+
+- Data loading & preprocessing
+- Feature engineering
+- Rare class filtering
+- Label encoding
+- Model training (XGBoost, RandomForest)
+- Hyperparameter tuning (Optuna)
+- SHAP explainability
+- Model persistence (via `joblib`)
+- Django integration support
+
+---
+
+## 📁 Project Structure
+
+```
+portman_ML/
+├── scripts/
+│   ├── tune_xgb_with_optuna.py   # Hyperparameter tuning
+│   ├── generate_shap_html.py     # SHAP explainability HTML
+│   └── train_model.py            # Model training & prediction
+├── portman/
+│   ├── config.py                 # Configuration (DATA_PATH, MODEL_PATH, etc.)
+│   ├── features.py               # Feature engineering functions
+│   ├── utils.py                  # Utilities (e.g., rare class filtering)
+│   ├── training/
+│   │   ├── trainer_rf.py         # RandomForest trainer
+│   │   ├── trainer_xgb.py        # XGBoost trainer
+│   │   └── model_trainer.py      # General model trainer interface
+```
+
+---
+
+## 🚀 Getting Started
+
+### 1. Create Virtual Environment
+
+```bash
+python -m venv portman-env
+source portman-env/bin/activate  # On Windows: .\portman-env\Scripts\activate
+```
+
+### 2. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Train a Model
+
+```bash
+python scripts/train_model.py
+```
+
+### 4. Tune Hyperparameters
+
+```bash
+python scripts/tune_xgb_with_optuna.py
+```
+
+### 5. Generate SHAP Explanations
+
+```bash
+python scripts/generate_shap_html.py
+```
+
+---
+
+## 📦 Output
+
+- `models/profile_recommender_xgb.pkl`: Trained XGBoost model with label encoder
+- `predictions.csv`: Example predictions
+- `shap_html/`: Interactive SHAP force plots
+
+---
+
+## ⚙️ Configuration
+
+Paths and model metadata are configured in `portman/config.py`:
+
+```python
+DATA_PATH = "data/dslam_data.csv"
+MODEL_PATH = "models"
+```
+
+---
+
+## 💡 Notes
+
+- Label encoding is used for multi-class classification.
+- Classes with fewer than 2 samples are automatically excluded.
+- For SHAP plots, make sure your machine has sufficient memory.
+- Can integrate with Django models by replacing data loading logic.
+
+---
+
 ## 🛡 License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
