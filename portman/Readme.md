@@ -184,10 +184,6 @@ MODEL_PATH = "models"
 
 ---
 
-## 🛡 License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome. Please create an issue or pull request as needed.
