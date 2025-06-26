@@ -1,0 +1,34 @@
+services:
+  web:
+    build:
+      context: ./portman_web
+      dockerfile: Dockerfile
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - ./portman_web:/app
+    ports:
+      - "8000:8000"
+
+  ml:
+    build:
+      context: ./portman_ML
+      dockerfile: Dockerfile
+    command: python portman_ML/scripts/train_model.py
+    volumes:
+      - ./portman_ML:/app
+
+  icmp:
+    build:
+      context: ./portman_icmp
+      dockerfile: Dockerfile
+    command: python icmp_service.py
+    volumes:
+      - ./portman_icmp:/app
+
+  mac:
+    build:
+      context: ./portman_mac
+      dockerfile: Dockerfile
+    command: python mac_service.py
+    volumes:
+      - ./portman_mac:/app

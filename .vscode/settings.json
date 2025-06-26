@@ -1,0 +1,5 @@
+{
+    "python.analysis.extraPaths": [
+        "./portman_ML/scripts"
+    ]
+}

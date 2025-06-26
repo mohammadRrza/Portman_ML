@@ -1,0 +1,118 @@
+import sys
+import telnetlib
+import time
+from socket import error as socket_error
+from .command_base import BaseCommand
+import re
+
+
+class ShowAllVLANs(BaseCommand):
+    def __init__(self, params=None):
+        self.__HOST = None
+        self.__telnet_username = None
+        self.__telnet_password = None
+        self.__vlan_name = params.get('vlan_name')
+        self.__access_name = params.get('access_name', 'an3300')
+        self.port_conditions = params.get('port_conditions')
+        self.device_ip = params.get('device_ip')
+        self.request_from_ui = params.get('request_from_ui')
+
+    @property
+    def HOST(self):
+        return self.__HOST
+
+    @HOST.setter
+    def HOST(self, value):
+        self.__HOST = value
+
+    @property
+    def telnet_username(self):
+        return self.__telnet_username
+
+    @telnet_username.setter
+    def telnet_username(self, value):
+        self.__telnet_username = value
+
+    @property
+    def telnet_password(self):
+        return self.__telnet_password
+
+    @telnet_password.setter
+    def telnet_password(self, value):
+        self.__telnet_password = value
+
+    retry = 1
+
+    def run_command(self):
+        try:
+            count = 1
+            res = ''
+            tn = telnetlib.Telnet(self.__HOST)
+            tn.write((self.__telnet_username + "\r\n").encode('utf-8'))
+            tn.write((self.__telnet_password + "\r\n").encode('utf-8'))
+            tn.write(b"end\r\n")
+            err1 = tn.read_until(b"end")
+            if "Login Failed." in str(err1):
+                return "Telnet Username or Password is wrong! Please contact with core-access department."
+            tn.read_until(b"User>")
+            tn.write(b'admin\r\n')
+            tn.read_until(b"Password:")
+            tn.write('{0}\r\n'.format(self.__access_name).encode('utf-8'))
+            time.sleep(0.5)
+            err1 = tn.read_until(b"#", 1)
+            if "Bad Password..." in str(err1):
+                return "DSLAM Password is wrong!"
+            tn.write(b"cd vlan\r\n")
+            tn.write(b"show pvc vlan\r\n")
+            time.sleep(0.5)
+            tn.read_until(b'#')
+            output = tn.read_until(b'stop--', 0.1)
+            res += output.decode('utf-8')
+            if 'Unknown command' in res:
+                tn.write(b'show localvlan\r\n')
+                output = tn.read_until(b'stop--', 0.1)
+                res = output.decode('utf-8')
+            while '#' not in str(output):
+                print('----------------------------------------')
+                print(count)
+                print('----------------------------------------')
+                count += 1
+                tn.write(b'\r\n')
+                output = tn.read_until(b'#', 0.1)
+                res += output.decode('utf-8')
+            tn.write(b"end\r\n")
+            result = tn.read_until(b"end")
+            res += result.decode('utf-8')
+            res = re.sub(r"--Press.*1H\d+", '', res)
+            result = res.split("\\r\\n")
+            # result = [re.sub(r"\s+--P[a-zA-Z +\\1-9[;-]+('b')[a-zA-Z +\\1-9[;-]+H", '', val) for val in result if
+            #           re.search(r'\s{4,}[-\d\w]|-{5,}', val)]
+            tn.write(b'cd ..\n')
+            tn.write(b'cd ..\n')
+            tn.write(b'exit\r\n')
+            tn.write(b'exit\r\n')
+            close_session = tn.read_until(b'Bye!', 2)
+            if 'Bye' not in str(close_session):
+                for i in range(4):
+                    tn.write(b'exit\r\n')
+                    close_session = tn.read_until(b'Bye!', 1)
+                    print(str(close_session))
+                    if b'Bye' in close_session:
+                        break
+            tn.close()
+            if self.request_from_ui:
+                str_join = "\r\n"
+                str_join = str_join.join(result)
+                return dict(result=str_join, status=200)
+            return dict(result=result, status=200)
+
+        except (EOFError, socket_error) as e:
+            print(e)
+            self.retry += 1
+            if self.retry < 4:
+                return self.run_command()
+
+        except Exception as ex:
+            exc_type, exc_obj, exc_tb = sys.exc_info()
+            exc_type, exc_obj, exc_tb = sys.exc_info()
+            return str(ex) + "  // " + str(exc_tb.tb_lineno)
